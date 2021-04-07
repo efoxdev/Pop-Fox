@@ -13,6 +13,11 @@
 		9BAC99C1261BED6C00A42712 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC99BF261BED6C00A42712 /* Main.storyboard */; };
 		9BAC99C3261BED6E00A42712 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC99C2261BED6E00A42712 /* Assets.xcassets */; };
 		9BAC99C6261BED6E00A42712 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC99C4261BED6E00A42712 /* LaunchScreen.storyboard */; };
+		9BAC99D9261E75C900A42712 /* Arvo-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC99D5261E75C900A42712 /* Arvo-Italic.ttf */; };
+		9BAC99DA261E75C900A42712 /* Arvo-BoldItalic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC99D6261E75C900A42712 /* Arvo-BoldItalic.ttf */; };
+		9BAC99DB261E75C900A42712 /* Arvo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC99D7261E75C900A42712 /* Arvo-Regular.ttf */; };
+		9BAC99DC261E75C900A42712 /* Arvo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9BAC99D8261E75C900A42712 /* Arvo-Bold.ttf */; };
+		9BAC99DF261E781B00A42712 /* RoundedViews.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9BAC99DE261E781B00A42712 /* RoundedViews.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +29,11 @@
 		9BAC99C2261BED6E00A42712 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		9BAC99C5261BED6E00A42712 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		9BAC99C7261BED6E00A42712 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9BAC99D5261E75C900A42712 /* Arvo-Italic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Italic.ttf"; sourceTree = "<group>"; };
+		9BAC99D6261E75C900A42712 /* Arvo-BoldItalic.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-BoldItalic.ttf"; sourceTree = "<group>"; };
+		9BAC99D7261E75C900A42712 /* Arvo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Regular.ttf"; sourceTree = "<group>"; };
+		9BAC99D8261E75C900A42712 /* Arvo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Arvo-Bold.ttf"; sourceTree = "<group>"; };
+		9BAC99DE261E781B00A42712 /* RoundedViews.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedViews.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +66,60 @@
 		9BAC99B8261BED6C00A42712 /* Pop Fox */ = {
 			isa = PBXGroup;
 			children = (
-				9BAC99B9261BED6C00A42712 /* AppDelegate.swift */,
+				9BAC99D1261E74B400A42712 /* Model */,
+				9BAC99D0261E74AC00A42712 /* View */,
+				9BAC99CE261E749600A42712 /* Controller */,
+				9BAC99D3261E757700A42712 /* Utils */,
 				9BAC99BB261BED6C00A42712 /* SceneDelegate.swift */,
-				9BAC99BD261BED6C00A42712 /* ViewController.swift */,
 				9BAC99BF261BED6C00A42712 /* Main.storyboard */,
 				9BAC99C2261BED6E00A42712 /* Assets.xcassets */,
 				9BAC99C4261BED6E00A42712 /* LaunchScreen.storyboard */,
 				9BAC99C7261BED6E00A42712 /* Info.plist */,
 			);
 			path = "Pop Fox";
+			sourceTree = "<group>";
+		};
+		9BAC99CE261E749600A42712 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				9BAC99BD261BED6C00A42712 /* ViewController.swift */,
+				9BAC99B9261BED6C00A42712 /* AppDelegate.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		9BAC99D0261E74AC00A42712 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				9BAC99DE261E781B00A42712 /* RoundedViews.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		9BAC99D1261E74B400A42712 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		9BAC99D3261E757700A42712 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				9BAC99D4261E757F00A42712 /* Fonts */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		9BAC99D4261E757F00A42712 /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				9BAC99D8261E75C900A42712 /* Arvo-Bold.ttf */,
+				9BAC99D6261E75C900A42712 /* Arvo-BoldItalic.ttf */,
+				9BAC99D5261E75C900A42712 /* Arvo-Italic.ttf */,
+				9BAC99D7261E75C900A42712 /* Arvo-Regular.ttf */,
+			);
+			path = Fonts;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,7 +180,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				9BAC99C6261BED6E00A42712 /* LaunchScreen.storyboard in Resources */,
+				9BAC99DC261E75C900A42712 /* Arvo-Bold.ttf in Resources */,
+				9BAC99DB261E75C900A42712 /* Arvo-Regular.ttf in Resources */,
 				9BAC99C3261BED6E00A42712 /* Assets.xcassets in Resources */,
+				9BAC99D9261E75C900A42712 /* Arvo-Italic.ttf in Resources */,
+				9BAC99DA261E75C900A42712 /* Arvo-BoldItalic.ttf in Resources */,
 				9BAC99C1261BED6C00A42712 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -137,6 +196,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9BAC99DF261E781B00A42712 /* RoundedViews.swift in Sources */,
 				9BAC99BE261BED6C00A42712 /* ViewController.swift in Sources */,
 				9BAC99BA261BED6C00A42712 /* AppDelegate.swift in Sources */,
 				9BAC99BC261BED6C00A42712 /* SceneDelegate.swift in Sources */,

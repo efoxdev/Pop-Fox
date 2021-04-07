@@ -15,11 +15,5 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
-    
-    func doSomething() {
-        if thisNumber == 1 {
-            thisNumber += 2
-        }
-    }
 }
 
